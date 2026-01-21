@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GitHub Pages Test</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 2em;
+    }
+  </style>
+</head>
+<body>
+
+<h2>GitHub Pages + JavaScript Test</h2>
+
+<p id="msg">Click the button</p>
+
+<button onclick="run()">Generate random number</button>
+
+<script>
+  function run() {
+    const x = Math.floor(Math.random() * 10) + 1;
+    document.getElementById("msg").textContent =
+      "Random number: " + x;
+  }
+</script>
+
+</body>
+</html>
